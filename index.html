@@ -1,41 +1,41 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Zihao Xing's robotics portfolio: heterogeneous robot modeling, transfer-docking reinforcement learning, multi-robot simulation, and ROS2 digital twins.">
-  <meta name="theme-color" content="#0a0c0f">
+  <meta name="description" content="机器人数字孪生与智能操作作品集：OpenUSD 与动力学建模、商飞筒段对接、移动合作数字孪生平台及强化学习训练记录。">
+  <meta name="theme-color" content="#0b0d10">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Zihao Xing | Robotics Systems">
-  <meta property="og:description" content="Digital twins, multi-robot coordination, and reinforcement learning from model to validated behavior.">
+  <meta property="og:title" content="机器人数字孪生与智能操作作品集">
+  <meta property="og:description" content="从可复用机器人模型到产业合作场景，再到强化学习智能操作。">
+  <meta property="og:image" content="https://zihao-robotics-systems.arielohry138.chatgpt.site/assets/og.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Zihao Xing | Robotics Systems">
-  <meta name="twitter:description" content="Digital twins, multi-robot coordination, and reinforcement learning from model to validated behavior.">
-  <title>Zihao Xing | Robotics Systems</title>
+  <meta name="twitter:title" content="机器人数字孪生与智能操作作品集">
+  <meta name="twitter:description" content="从可复用机器人模型到产业合作场景，再到强化学习智能操作。">
+  <meta name="twitter:image" content="https://zihao-robotics-systems.arielohry138.chatgpt.site/assets/og.png">
+  <title>机器人数字孪生与智能操作作品集</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <a class="skip-link" href="#main-content">Skip to content</a>
+  <a class="skip-link" href="#main-content">跳转到主要内容</a>
 
   <header class="site-header" id="top">
     <div class="nav-shell">
-      <a class="brand" href="#overview" aria-label="Zihao Xing home">
-        <span class="brand-mark" aria-hidden="true">ZX</span>
+      <a class="brand" href="#overview" aria-label="返回作品集首页">
+        <span class="brand-mark" aria-hidden="true">DT</span>
         <span class="brand-copy">
-          <strong>ZIHAO XING</strong>
-          <small>ROBOTICS SYSTEMS</small>
+          <strong>机器人数字孪生作品集</strong>
+          <small>DIGITAL TWIN · ROBOTICS</small>
         </span>
       </a>
-
-      <nav class="nav-links" aria-label="Primary navigation">
-        <a href="#docking">Docking case</a>
-        <a href="#fleet">Robot fleet</a>
-        <a href="#systems">Systems</a>
-        <a href="#profile">Profile</a>
+      <nav class="nav-links" aria-label="主要导航">
+        <a href="#modeling">孪生建模</a>
+        <a href="#collaboration">合作成果</a>
+        <a href="#manipulation">RL 操作</a>
+        <a href="#training">训练记录</a>
       </nav>
-
-      <span class="nav-status"><i aria-hidden="true"></i> 2026 PORTFOLIO</span>
+      <span class="nav-status"><i aria-hidden="true"></i> 持续更新</span>
     </div>
   </header>
 
@@ -43,335 +43,124 @@
     <section class="hero" id="overview" aria-labelledby="hero-title">
       <div class="hero-grid section-shell">
         <div class="hero-copy reveal">
-          <p class="eyebrow"><span>ROBOTICS</span> / DIGITAL TWINS / RL</p>
-          <h1 id="hero-title">Robots that learn,<br>coordinate &amp; dock.</h1>
-          <p class="hero-lead">
-            I build heterogeneous robot models and connect simulation, policy
-            training, and ROS2 systems into validated digital-twin workflows.
-          </p>
+          <p class="eyebrow"><span>数字孪生</span> 集群机器人 · 智能操作</p>
+          <h1 id="hero-title">机器人数字孪生<br>与智能操作</h1>
+          <p class="hero-lead">从 OpenUSD 元模型与动力学建模出发，将多类机器人、产业现场和智能策略组织为可复用、可验证、可扩展的系统成果。</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#docking">
-              Watch training <span>00:30</span>
-            </a>
-            <a class="button button-ghost" href="#fleet">Explore robot fleet <span aria-hidden="true">&darr;</span></a>
+            <a class="button button-primary" href="#modeling">查看项目架构 <span>01—04</span></a>
+            <a class="button button-ghost" href="#collaboration">浏览合作成果 <span aria-hidden="true">↓</span></a>
           </div>
         </div>
-
-        <figure class="hero-media reveal">
-          <img src="assets/images/optimized/transfer-docking-robot.webp"
-               width="1600" height="882"
-               alt="Transfer-docking mobile robot model in an Isaac Sim environment"
-               fetchpriority="high" decoding="async">
-          <span class="media-grid" aria-hidden="true"></span>
-          <span class="media-hud-cover" aria-hidden="true">
-            <small>MODEL / 01</small>
-            <strong>TRANSFER-DOCKING</strong>
-          </span>
-          <figcaption>
-            <span>Latest robot model</span>
-            <span>ISAAC SIM &middot; USD</span>
-          </figcaption>
-        </figure>
+        <div class="hero-stage reveal" aria-label="机器人数字孪生场景展示">
+          <figure class="hero-main-media">
+            <img src="assets/images/optimized/transfer-docking-robot.webp" width="1600" height="882" alt="移载对接机器人数字孪生模型" fetchpriority="high" decoding="async">
+            <figcaption><span>机器人孪生模型</span><span>OpenUSD · Isaac Sim</span></figcaption>
+          </figure>
+          <figure class="hero-inset-media">
+            <img src="assets/images/collaboration/comac-real-1.webp" width="375" height="248" alt="商飞筒段装配现场机器人设备" decoding="async">
+            <figcaption>产业现场</figcaption>
+          </figure>
+          <div class="hero-stamp" aria-hidden="true"><small>PORTFOLIO / 2026</small><strong>MODEL → SYSTEM → POLICY</strong></div>
+        </div>
       </div>
+      <ol class="architecture-line section-shell" aria-label="作品集结构">
+        <li><span>01</span><strong>机器人孪生建模</strong><small>USD · 动力学</small></li>
+        <li><span>02</span><strong>产业合作成果</strong><small>商飞 · 移动</small></li>
+        <li><span>03</span><strong>RL Manipulation</strong><small>内容预留</small></li>
+        <li><span>04</span><strong>阶段训练记录</strong><small>Epoch 对比</small></li>
+      </ol>
+    </section>
 
-      <div class="signal-row section-shell" aria-label="Portfolio highlights">
-        <div class="signal reveal">
-          <span>01</span>
-          <strong>6 robot platforms</strong>
-          <small>One heterogeneous fleet</small>
+    <section class="modeling-section" id="modeling" aria-labelledby="modeling-title">
+      <div class="section-shell">
+        <header class="section-heading section-heading-split reveal">
+          <div><p class="section-index">01 / ROBOT DIGITAL TWIN MODELING</p><h2 id="modeling-title">机器人孪生模型建模</h2></div>
+          <p>以可复用元模型为基础，将几何、语义、关节与动力学参数统一组织，形成面向多场景批量实例化的机器人资产库。</p>
+        </header>
+        <div class="workflow-grid">
+          <article class="workflow-card reveal">
+            <figure><img src="assets/images/workflows/openusd-modeling.webp" width="1746" height="846" alt="基于 OpenUSD 的机器人元模型构建流程" loading="lazy" decoding="async"></figure>
+            <div class="workflow-copy"><span class="item-number">01.1</span><div><p class="card-kicker">OPENUSD / ASSET PIPELINE</p><h3>USD 元模型构建</h3><p>从 CAD、坐标系、运动学链和材质纹理出发，经 URDF 与 USD 组织，组合执行器、机械臂、AGV、工装及场景元模型。</p><div class="tag-row"><span>CAD</span><span>URDF</span><span>OpenUSD</span><span>Isaac Sim</span></div></div></div>
+          </article>
+          <article class="workflow-card reveal">
+            <figure><img src="assets/images/workflows/dynamics-modeling.webp" width="1735" height="730" alt="机器人动力学模型与孪生世界构建流程" loading="lazy" decoding="async"></figure>
+            <div class="workflow-copy"><span class="item-number">01.2</span><div><p class="card-kicker">DYNAMICS / IDENTIFICATION</p><h3>动力学模型构建</h3><p>由真实设备运行数据辨识动力学参数，并将机器人 USD 模型、物理引擎、求解器与高性能计算资源连接到统一孪生世界。</p><div class="tag-row"><span>参数辨识</span><span>物理引擎</span><span>求解器</span><span>GPU</span></div></div></div>
+          </article>
         </div>
-        <div class="signal reveal">
-          <span>02</span>
-          <strong>10K&ndash;50K epochs</strong>
-          <small>Policy progression compared</small>
-        </div>
-        <div class="signal reveal">
-          <span>03</span>
-          <strong>ROS2 connected</strong>
-          <small>Real&ndash;virtual synchronization</small>
+        <div class="fleet-heading reveal"><div><span>模型资产库</span><strong>六类机器人平台</strong></div><p>覆盖移载、顶升、抓取、加工与感知等典型任务，可按项目需求组合为异构集群。</p></div>
+        <div class="model-strip">
+          <article class="model-card reveal"><img src="assets/images/optimized/transfer-docking-robot.webp" width="1600" height="882" alt="移载对接机器人模型" loading="lazy"><div><span>MODEL 01</span><h3>移载对接机器人</h3></div></article>
+          <article class="model-card reveal"><img src="assets/images/optimized/lifting-robot.webp" width="1600" height="882" alt="顶升机器人模型" loading="lazy"><div><span>MODEL 02</span><h3>顶升机器人</h3></div></article>
+          <article class="model-card reveal"><img src="assets/images/optimized/catch-robot.webp" width="1600" height="882" alt="抓取机器人模型" loading="lazy"><div><span>MODEL 03</span><h3>抓取机器人</h3></div></article>
+          <article class="model-card reveal"><img src="assets/images/optimized/transfer-robot.webp" width="1600" height="882" alt="转运机器人模型" loading="lazy"><div><span>MODEL 04</span><h3>转运机器人</h3></div></article>
+          <article class="model-card reveal"><img src="assets/images/optimized/process-robot.webp" width="1600" height="882" alt="加工机器人模型" loading="lazy"><div><span>MODEL 05</span><h3>加工机器人</h3></div></article>
+          <article class="model-card reveal"><img src="assets/images/optimized/perception-robot.webp" width="1600" height="882" alt="感知机器人模型" loading="lazy"><div><span>MODEL 06</span><h3>感知机器人</h3></div></article>
         </div>
       </div>
     </section>
 
-    <section class="case-section" id="docking" aria-labelledby="docking-title">
+    <section class="collaboration-section" id="collaboration" aria-labelledby="collaboration-title">
       <div class="section-shell">
         <header class="section-heading section-heading-split reveal">
-          <div>
-            <p class="section-index">01 / FLAGSHIP CASE</p>
-            <h2 id="docking-title">From robot model<br>to learned docking.</h2>
-          </div>
-          <p>
-            A complete transfer-docking workflow: build the articulated robot,
-            train parallel policies, compare checkpoints, and validate the final
-            behavior in simulation.
-          </p>
+          <div><p class="section-index">02 / INDUSTRIAL COLLABORATION</p><h2 id="collaboration-title">合作项目与系统成果</h2></div>
+          <p>这里将现场设备、孪生模型、分布式通信和业务流程合并展示，不再将“虚实联动”拆分为独立章节。</p>
         </header>
 
-        <ol class="process-line reveal" aria-label="Transfer-docking workflow">
-          <li><span>01</span><strong>Model</strong><small>Geometry &amp; drives</small></li>
-          <li><span>02</span><strong>Train</strong><small>Parallel environments</small></li>
-          <li><span>03</span><strong>Compare</strong><small>10K to 50K epochs</small></li>
-          <li><span>04</span><strong>Validate</strong><small>Best policy rollout</small></li>
-        </ol>
+        <article class="project-block project-block-comac">
+          <div class="project-intro reveal">
+            <div class="project-title"><span class="project-number">02.1</span><p class="card-kicker">中国商飞合作</p><h3>筒段对接数字孪生系统</h3><p>围绕飞机筒段装配实验产线，构建机器人与机构孪生模型，覆盖协同移载、精准对接、感知测量与加工复位等装配环节。</p></div>
+            <dl class="project-facts"><div><dt>合作场景</dt><dd>飞机筒段装配</dd></div><div><dt>核心对象</dt><dd>多机器人与工装机构</dd></div><div><dt>系统能力</dt><dd>建模 · 仿真 · 评估 · 决策</dd></div></dl>
+          </div>
+          <figure class="overview-figure reveal"><img src="assets/images/collaboration/comac-overview.webp" width="1587" height="656" alt="商飞筒段对接数字孪生整体展示" loading="lazy" decoding="async"><figcaption><span>整体方案</span><strong>现场产线 → 数字孪生场景 → 装配环节模型 → 数据与状态平台</strong></figcaption></figure>
+          <div class="motion-grid motion-grid-comac">
+            <article class="motion-card motion-card-wide reveal"><video muted loop playsinline preload="metadata" aria-label="筒段协同移载数字孪生动画"><source src="assets/videos/collaboration/comac-transfer.mp4" type="video/mp4"></video><div><span>01 / 协同移载</span><p>多台移载设备协同完成筒段位置调整与工位转移。</p></div></article>
+            <article class="motion-card reveal"><video muted loop playsinline preload="metadata" aria-label="筒段精准对接数字孪生动画"><source src="assets/videos/collaboration/comac-docking.mp4" type="video/mp4"></video><div><span>02 / 精准对接</span><p>依据位姿关系完成筒段轴线与接口的精确对准。</p></div></article>
+            <article class="motion-card reveal"><video muted loop playsinline preload="metadata" aria-label="筒段感知测量数字孪生动画"><source src="assets/videos/collaboration/comac-perception.mp4" type="video/mp4"></video><div><span>03 / 感知测量</span><p>感知设备参与装配状态与几何关系测量。</p></div></article>
+            <article class="motion-card reveal"><video muted loop playsinline preload="metadata" aria-label="筒段加工复位数字孪生动画"><source src="assets/videos/collaboration/comac-reset.mp4" type="video/mp4"></video><div><span>04 / 加工复位</span><p>完成加工动作后执行设备复位与流程闭环。</p></div></article>
+            <article class="motion-card reveal"><video muted loop playsinline preload="metadata" aria-label="筒段装配孪生总体场景动画"><source src="assets/videos/collaboration/comac-digital-twin.mp4" type="video/mp4"></video><div><span>05 / 总体孪生</span><p>在统一场景中还原产线布局、设备关系与装配过程。</p></div></article>
+          </div>
+          <div class="field-gallery reveal" aria-label="商飞项目现场图片"><figure><img src="assets/images/collaboration/comac-real-1.webp" width="375" height="248" alt="筒段装配现场一" loading="lazy"><figcaption>筒段协同装配设备</figcaption></figure><figure><img src="assets/images/collaboration/comac-real-2.webp" width="375" height="248" alt="筒段装配现场二" loading="lazy"><figcaption>移动作业机器人</figcaption></figure><figure><img src="assets/images/collaboration/comac-real-3.webp" width="240" height="160" alt="筒段装配现场三" loading="lazy"><figcaption>多设备协同现场</figcaption></figure></div>
+        </article>
 
+        <article class="project-block project-block-mobile">
+          <div class="project-intro reveal">
+            <div class="project-title"><span class="project-number">02.2</span><p class="card-kicker">移动合作</p><h3>集群机器人数字孪生平台</h3><p>面向异构机器人集群，构建 ROS2 分布式数据传输与管理平台，连接多源传感器、设备状态、仿真指令和 Omniverse 场景。</p></div>
+            <dl class="project-facts"><div><dt>孪生对象</dt><dd>5 类机器人及机构</dd></div><div><dt>通信框架</dt><dd>ROS2 · FastDDS</dd></div><div><dt>同步指标</dt><dd>端到端时延 &lt; 50 ms</dd></div></dl>
+          </div>
+          <div class="mobile-overview-grid">
+            <figure class="overview-figure reveal"><img src="assets/images/collaboration/mobile-overview.webp" width="1507" height="722" alt="移动合作集群机器人数字孪生平台总体架构" loading="lazy" decoding="async"><figcaption><span>平台总览</span><strong>机器人设备 · 传感数据 · ROS2 · Omniverse · 状态可视化</strong></figcaption></figure>
+            <aside class="bridge-card reveal"><img src="assets/images/collaboration/ros2-bridge.webp" width="303" height="186" alt="Isaac Sim ROS2 Bridge 节点连接" loading="lazy"><div><span>DATA BRIDGE</span><h4>Isaac Sim ROS2 Bridge</h4><p>连接关节状态、里程计、控制指令与场景节点，实现统一的数据通道。</p></div></aside>
+          </div>
+          <div class="motion-grid motion-grid-mobile">
+            <article class="motion-card reveal"><video muted loop playsinline preload="metadata" aria-label="移动合作孪生场景一"><source src="assets/videos/collaboration/mobile-scene-1.mp4" type="video/mp4"></video><div><span>SCENE 01</span><p>异构机器人模型总览</p></div></article>
+            <article class="motion-card reveal"><video muted loop playsinline preload="metadata" aria-label="移动合作孪生场景二"><source src="assets/videos/collaboration/mobile-scene-2.mp4" type="video/mp4"></video><div><span>SCENE 02</span><p>移动设备任务演示</p></div></article>
+            <article class="motion-card reveal"><video muted loop playsinline preload="metadata" aria-label="移动合作孪生场景三"><source src="assets/videos/collaboration/mobile-scene-3.mp4" type="video/mp4"></video><div><span>SCENE 03</span><p>作业场景与产线布局</p></div></article>
+            <article class="motion-card reveal"><video muted loop playsinline preload="metadata" aria-label="移动合作孪生场景四"><source src="assets/videos/collaboration/mobile-scene-4.mp4" type="video/mp4"></video><div><span>SCENE 04</span><p>筒段移载机构协同</p></div></article>
+          </div>
+          <div class="device-strip reveal" aria-label="移动合作项目机器人设备"><figure><img src="assets/images/collaboration/mobile-device-1.webp" width="443" height="229" alt="双臂移动机器人" loading="lazy"><figcaption>双臂移动机器人</figcaption></figure><figure><img src="assets/images/collaboration/mobile-device-2.webp" width="417" height="229" alt="物料转运机器人" loading="lazy"><figcaption>物料转运机器人</figcaption></figure><figure><img src="assets/images/collaboration/mobile-device-3.webp" width="302" height="156" alt="筒段装配机器人" loading="lazy"><figcaption>筒段装配机器人</figcaption></figure><figure><img src="assets/images/collaboration/mobile-device-4.webp" width="417" height="229" alt="实验室异构机器人集群" loading="lazy"><figcaption>异构机器人集群</figcaption></figure></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="manipulation-section" id="manipulation" aria-labelledby="manipulation-title">
+      <div class="section-shell manipulation-grid">
+        <header class="section-heading reveal"><p class="section-index">03 / RL MANIPULATION</p><h2 id="manipulation-title">强化学习智能操作</h2><p>该章节预留给后续 RL Manipulation 项目。成果加入后，将沿用“任务—训练—评估—验证”的统一展示结构。</p></header>
+        <div class="reserved-panel reveal"><div class="reserved-head"><span>RESERVED / 待更新</span><strong>下一阶段成果</strong></div><ol class="reserved-flow"><li><span>01</span><div><strong>任务定义</strong><small>环境、对象与奖励设计</small></div></li><li><span>02</span><div><strong>策略训练</strong><small>并行采样与策略优化</small></div></li><li><span>03</span><div><strong>结果验证</strong><small>泛化、鲁棒性与真机评估</small></div></li></ol><div class="reserved-canvas" aria-hidden="true"><i></i><i></i><i></i><span>RL MANIPULATION</span></div></div>
+      </div>
+    </section>
+
+    <section class="training-section" id="training" aria-labelledby="training-title">
+      <div class="section-shell">
+        <header class="section-heading section-heading-split reveal"><div><p class="section-index">04 / TRAINING LOG</p><h2 id="training-title">阶段训练记录</h2></div><p>这里只保留 Epoch 演进与最终策略的概览；完整环境设计、奖励函数与实验对比将在独立项目中展开。</p></header>
         <div class="training-layout">
-          <article class="training-card reveal">
-            <div class="training-video-shell">
-              <video controls playsinline preload="metadata"
-                     poster="assets/posters/transfer-docking-training.jpg"
-                     aria-describedby="training-caption">
-                <source src="assets/videos/transfer-docking-training.mp4" type="video/mp4">
-                Your browser does not support HTML video.
-              </video>
-              <span class="frame-label" aria-hidden="true"><i></i> POLICY TRAINING / 00:30</span>
-            </div>
-            <div class="training-caption" id="training-caption">
-              <div>
-                <span class="card-kicker">REINFORCEMENT LEARNING</span>
-                <h3>Transfer-Docking Policy Training</h3>
-              </div>
-              <p>Six synchronized views compare the policy at 10K, 20K, 30K, 40K, 50K epochs and the selected best checkpoint.</p>
-            </div>
-          </article>
-
-          <aside class="case-notes reveal" aria-label="Case study details">
-            <div class="case-note">
-              <span>Challenge</span>
-              <p>Learn repeatable approach and docking behavior across parallel simulated robots.</p>
-            </div>
-            <div class="case-note">
-              <span>Contribution</span>
-              <p>Robot modeling, drive configuration, training comparison, and motion validation.</p>
-            </div>
-            <div class="case-note">
-              <span>Methods</span>
-              <div class="tag-row">
-                <span>Isaac Sim</span><span>RL</span><span>USD</span><span>Python</span>
-              </div>
-            </div>
-            <div class="case-note outcome-note">
-              <span>Evidence</span>
-              <strong>Model &rarr; policy &rarr; validated rollout</strong>
-            </div>
-          </aside>
-        </div>
-
-        <div class="demo-grid">
-          <button class="demo-card reveal" type="button"
-                  data-video="assets/videos/transfer_docking_validation.mp4"
-                  data-title="Transfer-Docking Validation">
-            <img src="assets/posters/transfer_docking_validation.jpg" width="1280" height="720"
-                 alt="Transfer-docking robots performing a simulation validation" loading="lazy" decoding="async">
-            <span class="demo-shade"></span>
-            <span class="demo-play" aria-hidden="true">PLAY</span>
-            <span class="demo-copy"><small>02 / VALIDATION</small><strong>Best-policy rollout</strong><span>00:59</span></span>
-          </button>
-
-          <button class="demo-card reveal" type="button"
-                  data-video="assets/videos/transfer_docking_model.webm"
-                  data-title="Transfer-Docking Model Validation">
-            <img src="assets/posters/transfer_docking_model.jpg" width="1280" height="872"
-                 alt="Transfer-docking robot model motion validation in Isaac Sim" loading="lazy" decoding="async">
-            <span class="demo-shade"></span>
-            <span class="demo-play" aria-hidden="true">PLAY</span>
-            <span class="demo-copy"><small>01 / MODEL</small><strong>Drive &amp; motion check</strong><span>00:50</span></span>
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <section class="fleet-section" id="fleet" aria-labelledby="fleet-title">
-      <div class="section-shell">
-        <header class="section-heading section-heading-split reveal">
-          <div>
-            <p class="section-index">02 / ROBOT FLEET</p>
-            <h2 id="fleet-title">Six platforms.<br>One shared world.</h2>
-          </div>
-          <p>
-            A newly rebuilt model library for heterogeneous coordination,
-            sensing, transfer, lifting, manipulation, and process tasks.
-          </p>
-        </header>
-
-        <div class="robot-grid">
-          <article class="robot-card robot-card-wide reveal">
-            <div class="robot-media">
-              <img src="assets/images/optimized/transfer-docking-robot.webp" width="1600" height="882"
-                   alt="Transfer-docking mobile robot model" loading="lazy" decoding="async">
-              <span class="robot-status">MODEL 01 / DOCKING</span>
-            </div>
-            <div class="robot-copy">
-              <div><span>TRANSFER &amp; DOCKING</span><h3>Transfer-Docking Robot</h3></div>
-              <p>Mobile platform for precision alignment, load transfer, and autonomous docking tasks.</p>
-            </div>
-          </article>
-
-          <article class="robot-card reveal">
-            <div class="robot-media">
-              <img src="assets/images/optimized/lifting-robot.webp" width="1600" height="882"
-                   alt="Blue lifting mobile robot model" loading="lazy" decoding="async">
-              <span class="robot-status">MODEL 02 / LIFT</span>
-            </div>
-            <div class="robot-copy">
-              <div><span>VERTICAL TRANSFER</span><h3>Lifting Robot</h3></div>
-              <p>Compact platform for vertical positioning and payload handoff.</p>
-            </div>
-          </article>
-
-          <article class="robot-card reveal">
-            <div class="robot-media">
-              <img src="assets/images/optimized/catch-robot.webp" width="1600" height="882"
-                   alt="Dual-arm catch robot on a mobile base" loading="lazy" decoding="async">
-              <span class="robot-status">MODEL 03 / CATCH</span>
-            </div>
-            <div class="robot-copy">
-              <div><span>MOBILE MANIPULATION</span><h3>Catch Robot</h3></div>
-              <p>Dual-arm mobile manipulator for coordinated handling tasks.</p>
-            </div>
-          </article>
-
-          <article class="robot-card reveal">
-            <div class="robot-media">
-              <img src="assets/images/optimized/transfer-robot.webp" width="1600" height="882"
-                   alt="Material transfer mobile robot model" loading="lazy" decoding="async">
-              <span class="robot-status">MODEL 04 / FLOW</span>
-            </div>
-            <div class="robot-copy">
-              <div><span>MATERIAL FLOW</span><h3>Transfer Robot</h3></div>
-              <p>Mobile carrier for workpiece transport between process stations.</p>
-            </div>
-          </article>
-
-          <article class="robot-card reveal">
-            <div class="robot-media">
-              <img src="assets/images/optimized/process-robot.webp" width="1600" height="882"
-                   alt="Process robot with a collaborative arm on a mobile base" loading="lazy" decoding="async">
-              <span class="robot-status">MODEL 05 / PROCESS</span>
-            </div>
-            <div class="robot-copy">
-              <div><span>MOBILE PROCESS</span><h3>Process Robot</h3></div>
-              <p>Collaborative arm and mobile base integrated for process execution.</p>
-            </div>
-          </article>
-
-          <article class="robot-card reveal">
-            <div class="robot-media">
-              <img src="assets/images/optimized/perception-robot.webp" width="1600" height="882"
-                   alt="Tall multi-sensor perception robot model" loading="lazy" decoding="async">
-              <span class="robot-status">MODEL 06 / SENSE</span>
-            </div>
-            <div class="robot-copy">
-              <div><span>SCENE PERCEPTION</span><h3>Perception Robot</h3></div>
-              <p>Elevated sensing platform for scene monitoring and spatial data capture.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="systems-section" id="systems" aria-labelledby="systems-title">
-      <div class="section-shell">
-        <header class="section-heading reveal">
-          <p class="section-index">03 / CONNECTED SYSTEMS</p>
-          <h2 id="systems-title">Beyond the model.</h2>
-          <p>Robot assets become useful when they connect to communication, synchronization, and complete multi-robot workflows.</p>
-        </header>
-
-        <article class="system-story reveal">
-          <figure class="system-media">
-            <img src="assets/images/ros2_bridge.png" width="1896" height="1352"
-                 alt="ROS2 bridge and digital twin monitoring interface" loading="lazy" decoding="async">
-            <figcaption>ROS2 bridge / system interface</figcaption>
-          </figure>
-          <div class="system-copy">
-            <span class="story-number">03.1</span>
-            <p class="card-kicker">REAL&ndash;VIRTUAL SYNCHRONIZATION</p>
-            <h3>Multi-Robot Digital Twin Platform</h3>
-            <p>ROS2 communication links physical robots, simulated counterparts, synchronized state, and operator monitoring in one architecture.</p>
-            <ol class="system-pipeline" aria-label="Digital twin pipeline">
-              <li><span>01</span>Physical robots</li>
-              <li><span>02</span>ROS2 bridge</li>
-              <li><span>03</span>Digital twin</li>
-              <li><span>04</span>State monitoring</li>
-            </ol>
-            <button class="text-button" type="button"
-                    data-video="assets/videos/digital_twin_platform.mp4"
-                    data-title="ROS2 Real-Virtual Synchronization">
-              Watch synchronization demo <span>00:25</span>
-            </button>
-          </div>
-        </article>
-
-        <article class="system-story system-story-reverse reveal">
-          <figure class="system-media">
-            <img src="assets/images/assembly_scene.png" width="2541" height="1433"
-                 alt="Aircraft assembly digital twin with multiple robots" loading="lazy" decoding="async">
-            <figcaption>Multi-robot assembly / full scene</figcaption>
-          </figure>
-          <div class="system-copy">
-            <span class="story-number">03.2</span>
-            <p class="card-kicker">COOPERATIVE ASSEMBLY</p>
-            <h3>Aircraft Assembly Digital Twin</h3>
-            <p>A large-scale simulation environment for multi-robot coordination, assembly sequencing, and docking workflow demonstration.</p>
-            <div class="tag-row tag-row-light">
-              <span>Isaac Sim</span><span>ROS2</span><span>USD</span><span>Python</span>
-            </div>
-            <button class="text-button" type="button"
-                    data-video="assets/videos/aircraft_docking.mp4"
-                    data-title="Aircraft Assembly Digital Twin">
-              Watch assembly demo <span>02:53</span>
-            </button>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="profile-section" id="profile" aria-labelledby="profile-title">
-      <div class="section-shell profile-grid">
-        <div class="profile-heading reveal">
-          <p class="section-index">04 / PROFILE</p>
-          <h2 id="profile-title">Simulation is the start.<br>System behavior is the result.</h2>
-        </div>
-        <div class="profile-copy reveal">
-          <p>
-            Graduate research focused on robot simulation, digital-twin systems,
-            heterogeneous coordination, and intelligent robot control.
-          </p>
-          <div class="capability-list" aria-label="Technical capabilities">
-            <span>Digital Twin</span>
-            <span>Isaac Sim</span>
-            <span>ROS2</span>
-            <span>Multi-Robot Systems</span>
-            <span>Reinforcement Learning</span>
-            <span>USD / Python</span>
-          </div>
+          <article class="training-video reveal"><video controls playsinline preload="metadata" poster="assets/posters/transfer-docking-training.jpg"><source src="assets/videos/transfer-docking-training.mp4" type="video/mp4">当前浏览器不支持视频播放。</video><div><span>移载对接策略训练</span><p>并列观察 10K—50K Epoch 的行为变化，并与最终选定策略进行对比。</p></div></article>
+          <aside class="epoch-panel reveal"><p class="card-kicker">POLICY PROGRESSION</p><h3>从探索到稳定对接</h3><ol class="epoch-line" aria-label="训练阶段"><li><span>10K</span><small>探索</small></li><li><span>20K</span><small>接近</small></li><li><span>30K</span><small>对准</small></li><li><span>40K</span><small>收敛</small></li><li><span>50K</span><small>稳定</small></li><li class="is-selected"><span>BEST</span><small>选定策略</small></li></ol><p class="training-note">当前记录用于说明策略随训练阶段的演进，不替代后续项目中的定量实验与消融分析。</p></aside>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer section-shell">
-    <span>&copy; <span id="year"></span> Zihao Xing</span>
-    <span>ROBOTICS &middot; DIGITAL TWINS &middot; INTELLIGENT SYSTEMS</span>
-    <a href="#top">Back to top &uarr;</a>
-  </footer>
-
-  <div class="modal" id="video-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
-    <button class="modal-backdrop" type="button" data-close-modal aria-label="Close video"></button>
-    <div class="modal-panel" role="document">
-      <div class="modal-bar">
-        <div>
-          <span>VIDEO / PORTFOLIO</span>
-          <h2 id="modal-title">Video</h2>
-        </div>
-        <button class="modal-close" type="button" data-close-modal aria-label="Close video">&times;</button>
-      </div>
-      <div class="modal-video-wrap">
-        <video id="modal-video" controls playsinline preload="metadata"></video>
-      </div>
-    </div>
-  </div>
-
+  <footer class="footer section-shell"><span>© <span id="year"></span> 机器人数字孪生作品集</span><span>OPENUSD · ISAAC SIM · ROS2 · RL</span><a href="#top">返回顶部 ↑</a></footer>
   <script src="js/main.js"></script>
 </body>
 </html>
