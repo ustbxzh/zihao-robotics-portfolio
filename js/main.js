@@ -1,7 +1,7 @@
 (() => {
   const root = document.documentElement;
   const revealItems = [...document.querySelectorAll(".reveal")];
-  const motionVideos = [...document.querySelectorAll(".motion-card video")];
+  const motionVideos = [...document.querySelectorAll(".motion-card video, .paired-media video")];
 
   if (revealItems.length) {
     root.classList.add("js");

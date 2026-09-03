@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="机器人数字孪生与智能操作作品集：OpenUSD 与动力学建模、商飞筒段对接、移动合作数字孪生平台及强化学习训练记录。">
+  <meta name="description" content="机器人数字孪生与智能操作作品集：OpenUSD 与动力学建模、六类机器人模型、商飞筒段对接及移动合作数字孪生平台。">
   <meta name="theme-color" content="#0b0d10">
   <meta property="og:type" content="website">
   <meta property="og:title" content="机器人数字孪生与智能操作作品集">
@@ -33,7 +33,6 @@
         <a href="#modeling">孪生建模</a>
         <a href="#collaboration">合作成果</a>
         <a href="#manipulation">RL 操作</a>
-        <a href="#training">训练记录</a>
       </nav>
       <span class="nav-status"><i aria-hidden="true"></i> 持续更新</span>
     </div>
@@ -47,7 +46,7 @@
           <h1 id="hero-title">机器人数字孪生<br>与智能操作</h1>
           <p class="hero-lead">从 OpenUSD 元模型与动力学建模出发，将多类机器人、产业现场和智能策略组织为可复用、可验证、可扩展的系统成果。</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#modeling">查看项目架构 <span>01—04</span></a>
+            <a class="button button-primary" href="#modeling">查看项目架构 <span>01—03</span></a>
             <a class="button button-ghost" href="#collaboration">浏览合作成果 <span aria-hidden="true">↓</span></a>
           </div>
         </div>
@@ -67,7 +66,6 @@
         <li><span>01</span><strong>机器人孪生建模</strong><small>USD · 动力学</small></li>
         <li><span>02</span><strong>产业合作成果</strong><small>商飞 · 移动</small></li>
         <li><span>03</span><strong>RL Manipulation</strong><small>内容预留</small></li>
-        <li><span>04</span><strong>阶段训练记录</strong><small>Epoch 对比</small></li>
       </ol>
     </section>
 
@@ -77,7 +75,7 @@
           <div><p class="section-index">01 / ROBOT DIGITAL TWIN MODELING</p><h2 id="modeling-title">机器人孪生模型建模</h2></div>
           <p>以可复用元模型为基础，将几何、语义、关节与动力学参数统一组织，形成面向多场景批量实例化的机器人资产库。</p>
         </header>
-        <div class="workflow-grid">
+        <div class="workflow-grid" aria-label="机器人孪生建模流程">
           <article class="workflow-card reveal">
             <figure><img src="assets/images/workflows/openusd-modeling.webp" width="1746" height="846" alt="基于 OpenUSD 的机器人元模型构建流程" loading="lazy" decoding="async"></figure>
             <div class="workflow-copy"><span class="item-number">01.1</span><div><p class="card-kicker">OPENUSD / ASSET PIPELINE</p><h3>USD 元模型构建</h3><p>从 CAD、坐标系、运动学链和材质纹理出发，经 URDF 与 USD 组织，组合执行器、机械臂、AGV、工装及场景元模型。</p><div class="tag-row"><span>CAD</span><span>URDF</span><span>OpenUSD</span><span>Isaac Sim</span></div></div></div>
@@ -87,9 +85,9 @@
             <div class="workflow-copy"><span class="item-number">01.2</span><div><p class="card-kicker">DYNAMICS / IDENTIFICATION</p><h3>动力学模型构建</h3><p>由真实设备运行数据辨识动力学参数，并将机器人 USD 模型、物理引擎、求解器与高性能计算资源连接到统一孪生世界。</p><div class="tag-row"><span>参数辨识</span><span>物理引擎</span><span>求解器</span><span>GPU</span></div></div></div>
           </article>
         </div>
-        <div class="fleet-heading reveal"><div><span>模型资产库</span><strong>六类机器人平台</strong></div><p>覆盖移载、顶升、抓取、加工与感知等典型任务，可按项目需求组合为异构集群。</p></div>
+        <div class="fleet-heading reveal"><div><span>模型资产库</span><strong>六类机器人模型</strong></div><p>覆盖移载、顶升、抓取、加工与感知等典型任务，可按项目需求组合为异构集群。</p></div>
         <div class="model-strip">
-          <article class="model-card reveal"><img src="assets/images/optimized/transfer-docking-robot.webp" width="1600" height="882" alt="移载对接机器人模型" loading="lazy"><div><span>MODEL 01</span><h3>移载对接机器人</h3></div></article>
+          <article class="model-card model-card-wide reveal"><img src="assets/images/optimized/transfer-docking-robot.webp" width="1600" height="882" alt="移载对接机器人模型" loading="lazy"><div><span>MODEL 01</span><h3>移载对接机器人</h3></div></article>
           <article class="model-card reveal"><img src="assets/images/optimized/lifting-robot.webp" width="1600" height="882" alt="顶升机器人模型" loading="lazy"><div><span>MODEL 02</span><h3>顶升机器人</h3></div></article>
           <article class="model-card reveal"><img src="assets/images/optimized/catch-robot.webp" width="1600" height="882" alt="抓取机器人模型" loading="lazy"><div><span>MODEL 03</span><h3>抓取机器人</h3></div></article>
           <article class="model-card reveal"><img src="assets/images/optimized/transfer-robot.webp" width="1600" height="882" alt="转运机器人模型" loading="lazy"><div><span>MODEL 04</span><h3>转运机器人</h3></div></article>
@@ -113,13 +111,13 @@
           </div>
           <figure class="overview-figure reveal"><img src="assets/images/collaboration/comac-overview.webp" width="1587" height="656" alt="商飞筒段对接数字孪生整体展示" loading="lazy" decoding="async"><figcaption><span>整体方案</span><strong>现场产线 → 数字孪生场景 → 装配环节模型 → 数据与状态平台</strong></figcaption></figure>
           <div class="motion-grid motion-grid-comac">
-            <article class="motion-card motion-card-wide reveal"><video muted loop playsinline preload="metadata" aria-label="筒段协同移载数字孪生动画"><source src="assets/videos/collaboration/comac-transfer.mp4" type="video/mp4"></video><div><span>01 / 协同移载</span><p>多台移载设备协同完成筒段位置调整与工位转移。</p></div></article>
+            <article class="motion-card motion-card-wide reveal"><video muted loop playsinline preload="metadata" aria-label="筒段装配孪生总体场景动画"><source src="assets/videos/collaboration/comac-digital-twin.mp4" type="video/mp4"></video><div><span>05 / 总体孪生</span><p>在统一场景中还原产线布局、设备关系与装配过程。</p></div></article>
             <article class="motion-card reveal"><video muted loop playsinline preload="metadata" aria-label="筒段精准对接数字孪生动画"><source src="assets/videos/collaboration/comac-docking.mp4" type="video/mp4"></video><div><span>02 / 精准对接</span><p>依据位姿关系完成筒段轴线与接口的精确对准。</p></div></article>
             <article class="motion-card reveal"><video muted loop playsinline preload="metadata" aria-label="筒段感知测量数字孪生动画"><source src="assets/videos/collaboration/comac-perception.mp4" type="video/mp4"></video><div><span>03 / 感知测量</span><p>感知设备参与装配状态与几何关系测量。</p></div></article>
             <article class="motion-card reveal"><video muted loop playsinline preload="metadata" aria-label="筒段加工复位数字孪生动画"><source src="assets/videos/collaboration/comac-reset.mp4" type="video/mp4"></video><div><span>04 / 加工复位</span><p>完成加工动作后执行设备复位与流程闭环。</p></div></article>
-            <article class="motion-card reveal"><video muted loop playsinline preload="metadata" aria-label="筒段装配孪生总体场景动画"><source src="assets/videos/collaboration/comac-digital-twin.mp4" type="video/mp4"></video><div><span>05 / 总体孪生</span><p>在统一场景中还原产线布局、设备关系与装配过程。</p></div></article>
+            <article class="motion-card reveal"><video muted loop playsinline preload="metadata" aria-label="筒段协同移载数字孪生动画"><source src="assets/videos/collaboration/comac-transfer.mp4" type="video/mp4"></video><div><span>01 / 协同移载</span><p>多台移载设备协同完成筒段位置调整与工位转移。</p></div></article>
           </div>
-          <div class="field-gallery reveal" aria-label="商飞项目现场图片"><figure><img src="assets/images/collaboration/comac-real-1.webp" width="375" height="248" alt="筒段装配现场一" loading="lazy"><figcaption>筒段协同装配设备</figcaption></figure><figure><img src="assets/images/collaboration/comac-real-2.webp" width="375" height="248" alt="筒段装配现场二" loading="lazy"><figcaption>移动作业机器人</figcaption></figure><figure><img src="assets/images/collaboration/comac-real-3.webp" width="240" height="160" alt="筒段装配现场三" loading="lazy"><figcaption>多设备协同现场</figcaption></figure></div>
+          <div class="field-gallery reveal" aria-label="商飞项目现场图片"><figure><img src="assets/images/collaboration/comac-real-1.webp" width="375" height="248" alt="筒段装配现场一" loading="lazy"><figcaption>筒段协同装配设备</figcaption></figure><figure><img src="assets/images/collaboration/comac-real-2.webp" width="375" height="248" alt="筒段装配现场二" loading="lazy"><figcaption>移动作业机器人</figcaption></figure><figure><img src="assets/images/collaboration/comac-real-3.webp" width="375" height="248" alt="筒段装配现场三" loading="lazy"><figcaption>多设备协同现场</figcaption></figure></div>
         </article>
 
         <article class="project-block project-block-mobile">
@@ -131,13 +129,12 @@
             <figure class="overview-figure reveal"><img src="assets/images/collaboration/mobile-overview.webp" width="1507" height="722" alt="移动合作集群机器人数字孪生平台总体架构" loading="lazy" decoding="async"><figcaption><span>平台总览</span><strong>机器人设备 · 传感数据 · ROS2 · Omniverse · 状态可视化</strong></figcaption></figure>
             <aside class="bridge-card reveal"><img src="assets/images/collaboration/ros2-bridge.webp" width="303" height="186" alt="Isaac Sim ROS2 Bridge 节点连接" loading="lazy"><div><span>DATA BRIDGE</span><h4>Isaac Sim ROS2 Bridge</h4><p>连接关节状态、里程计、控制指令与场景节点，实现统一的数据通道。</p></div></aside>
           </div>
-          <div class="motion-grid motion-grid-mobile">
-            <article class="motion-card reveal"><video muted loop playsinline preload="metadata" aria-label="移动合作孪生场景一"><source src="assets/videos/collaboration/mobile-scene-1.mp4" type="video/mp4"></video><div><span>SCENE 01</span><p>异构机器人模型总览</p></div></article>
-            <article class="motion-card reveal"><video muted loop playsinline preload="metadata" aria-label="移动合作孪生场景二"><source src="assets/videos/collaboration/mobile-scene-2.mp4" type="video/mp4"></video><div><span>SCENE 02</span><p>移动设备任务演示</p></div></article>
-            <article class="motion-card reveal"><video muted loop playsinline preload="metadata" aria-label="移动合作孪生场景三"><source src="assets/videos/collaboration/mobile-scene-3.mp4" type="video/mp4"></video><div><span>SCENE 03</span><p>作业场景与产线布局</p></div></article>
-            <article class="motion-card reveal"><video muted loop playsinline preload="metadata" aria-label="移动合作孪生场景四"><source src="assets/videos/collaboration/mobile-scene-4.mp4" type="video/mp4"></video><div><span>SCENE 04</span><p>筒段移载机构协同</p></div></article>
+          <div class="twin-pair-grid" aria-label="真实设备与数字孪生场景对应展示">
+            <article class="twin-pair-card reveal"><header><span>PAIR 01</span><h4>双臂移动机器人与集群场景</h4></header><div class="paired-media"><figure><img src="assets/images/collaboration/mobile-device-1.webp" width="443" height="229" alt="双臂移动机器人实景" loading="lazy"><figcaption>真实设备</figcaption></figure><figure><video muted loop playsinline preload="metadata" aria-label="双臂移动机器人数字孪生场景"><source src="assets/videos/collaboration/mobile-scene-1.mp4" type="video/mp4"></video><figcaption>孪生场景</figcaption></figure></div></article>
+            <article class="twin-pair-card reveal"><header><span>PAIR 02</span><h4>物料转运机器人与任务场景</h4></header><div class="paired-media"><figure><img src="assets/images/collaboration/mobile-device-2.webp" width="417" height="229" alt="物料转运机器人实景" loading="lazy"><figcaption>真实设备</figcaption></figure><figure><video muted loop playsinline preload="metadata" aria-label="物料转运机器人数字孪生场景"><source src="assets/videos/collaboration/mobile-scene-2.mp4" type="video/mp4"></video><figcaption>孪生场景</figcaption></figure></div></article>
+            <article class="twin-pair-card reveal"><header><span>PAIR 03</span><h4>感知作业机器人与产线场景</h4></header><div class="paired-media"><figure><img src="assets/images/collaboration/mobile-device-3.webp" width="302" height="156" alt="感知作业机器人实景" loading="lazy"><figcaption>真实设备</figcaption></figure><figure><video muted loop playsinline preload="metadata" aria-label="感知作业机器人数字孪生场景"><source src="assets/videos/collaboration/mobile-scene-3.mp4" type="video/mp4"></video><figcaption>孪生场景</figcaption></figure></div></article>
+            <article class="twin-pair-card reveal"><header><span>PAIR 04</span><h4>三车协同与筒段移载场景</h4></header><div class="paired-media"><figure><img src="assets/images/collaboration/mobile-device-4.webp" width="417" height="229" alt="三车协同筒段移载实景" loading="lazy"><figcaption>真实设备</figcaption></figure><figure><video muted loop playsinline preload="metadata" aria-label="三车协同筒段移载数字孪生场景"><source src="assets/videos/collaboration/mobile-scene-4.mp4" type="video/mp4"></video><figcaption>孪生场景</figcaption></figure></div></article>
           </div>
-          <div class="device-strip reveal" aria-label="移动合作项目机器人设备"><figure><img src="assets/images/collaboration/mobile-device-1.webp" width="443" height="229" alt="双臂移动机器人" loading="lazy"><figcaption>双臂移动机器人</figcaption></figure><figure><img src="assets/images/collaboration/mobile-device-2.webp" width="417" height="229" alt="物料转运机器人" loading="lazy"><figcaption>物料转运机器人</figcaption></figure><figure><img src="assets/images/collaboration/mobile-device-3.webp" width="302" height="156" alt="筒段装配机器人" loading="lazy"><figcaption>筒段装配机器人</figcaption></figure><figure><img src="assets/images/collaboration/mobile-device-4.webp" width="417" height="229" alt="实验室异构机器人集群" loading="lazy"><figcaption>异构机器人集群</figcaption></figure></div>
         </article>
       </div>
     </section>
@@ -149,15 +146,6 @@
       </div>
     </section>
 
-    <section class="training-section" id="training" aria-labelledby="training-title">
-      <div class="section-shell">
-        <header class="section-heading section-heading-split reveal"><div><p class="section-index">04 / TRAINING LOG</p><h2 id="training-title">阶段训练记录</h2></div><p>这里只保留 Epoch 演进与最终策略的概览；完整环境设计、奖励函数与实验对比将在独立项目中展开。</p></header>
-        <div class="training-layout">
-          <article class="training-video reveal"><video controls playsinline preload="metadata" poster="assets/posters/transfer-docking-training.jpg"><source src="assets/videos/transfer-docking-training.mp4" type="video/mp4">当前浏览器不支持视频播放。</video><div><span>移载对接策略训练</span><p>并列观察 10K—50K Epoch 的行为变化，并与最终选定策略进行对比。</p></div></article>
-          <aside class="epoch-panel reveal"><p class="card-kicker">POLICY PROGRESSION</p><h3>从探索到稳定对接</h3><ol class="epoch-line" aria-label="训练阶段"><li><span>10K</span><small>探索</small></li><li><span>20K</span><small>接近</small></li><li><span>30K</span><small>对准</small></li><li><span>40K</span><small>收敛</small></li><li><span>50K</span><small>稳定</small></li><li class="is-selected"><span>BEST</span><small>选定策略</small></li></ol><p class="training-note">当前记录用于说明策略随训练阶段的演进，不替代后续项目中的定量实验与消融分析。</p></aside>
-        </div>
-      </div>
-    </section>
   </main>
 
   <footer class="footer section-shell"><span>© <span id="year"></span> 机器人数字孪生作品集</span><span>OPENUSD · ISAAC SIM · ROS2 · RL</span><a href="#top">返回顶部 ↑</a></footer>
